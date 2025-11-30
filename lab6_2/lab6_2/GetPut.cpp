@@ -1,26 +1,26 @@
 #include <iostream>
 using namespace std;
 
-// Функция ввода данных
+// Р¤СѓРЅРєС†РёСЏ РІРІРѕРґР° РґР°РЅРЅС‹С…
 void GetXZ(double& x, double& z)
 {
     setlocale(LC_ALL, "rus");
-    cout << "Введите x и z: ";
+    cout << "Г‚ГўГҐГ¤ГЁГІГҐ x ГЁ z: ";
     cin >> x >> z;
 }
-
-// Функция вывода результатов
+// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
 void PutRN(double R, int N, const string& method)
 {
     setlocale(LC_ALL, "rus");
     cout << "\n" << method << ":" << endl;
-    cout << "Ответ R = " << R << endl;
-    cout << "Номер ветки разветвления: " << N << endl;
+    cout << "ГЋГІГўГҐГІ R = " << R << endl;
+    cout << "ГЌГ®Г¬ГҐГ° ГўГҐГІГЄГЁ Г°Г Г§ГўГҐГІГўГ«ГҐГ­ГЁГї: " << N << endl;
 }
 
-// Функция вывода ошибки
+// Р¤СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РѕС€РёР±РєРё
 void PutError(const string& message)
 {
     setlocale(LC_ALL, "rus");
-    cout << "Ошибка: " << message << endl;
+    cout << "ГЋГёГЁГЎГЄГ : " << message << endl;
+
 }
