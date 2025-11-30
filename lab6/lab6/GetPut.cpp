@@ -5,7 +5,7 @@ using namespace std;
 void GetXY(float& x, float& y)
 {
     setlocale(LC_ALL, "rus");
-    cout << "Ââåäèòå êîîðäèíàòû òî÷êè x, y: ";
+    cout << "Введите координаты точки x, y: ";
     cin >> x >> y;
 }
 
@@ -13,10 +13,11 @@ void GetXY(float& x, float& y)
 void Put(bool b, float x, float y)
 {
     setlocale(LC_ALL, "rus");
-    cout << "Òî÷êà ñ êîîðäèíàòàìè (" << x << ", " << y << ")" << endl;
+    cout << "Точка с координатами (" << x << ", " << y << ")" << endl;
     if (b)
-        cout << "ïîïàëà â çàäàííóþ îáëàñòü" << endl;
+        cout << "попала в заданную область" << endl;
     else
-        cout << "íå ïîïàëà â çàäàííóþ îáëàñòü" << endl;
+        cout << "не попала в заданную область" << endl;
 
 }
+
