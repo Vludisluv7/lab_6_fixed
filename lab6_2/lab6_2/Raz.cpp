@@ -3,19 +3,19 @@
 
 using namespace std;
 
-//нахождения минимума
+//РЅР°С…РѕР¶РґРµРЅРёСЏ РјРёРЅРёРјСѓРјР°
 double minMy(double a, double b)
 {
     return (a < b) ? a : b;
 }
 
-//нахождения максимума
+//РЅР°С…РѕР¶РґРµРЅРёСЏ РјР°РєСЃРёРјСѓРјР°
 double maxMy(double a, double b)
 {
     return (a > b) ? a : b;
 }
 
-// 1-й способ 
+// 1-Р№ СЃРїРѕСЃРѕР± 
 double Razv(double x, double z, int& n)
 {
     double r;
@@ -23,14 +23,14 @@ double Razv(double x, double z, int& n)
     if (z < 0 && x < 0) {
         n = 1;
 
-        // Вычисление min(x, z) вручную
+        // Р’С‹С‡РёСЃР»РµРЅРёРµ min(x, z) РІСЂСѓС‡РЅСѓСЋ
         r = x;
         if (z < x) r = z;
     }
     else if (z > 0 && x > 0) {
         n = 2;
 
-        // Вычисление max(x, корень третьей степени(x+z), cos(xz)) вручную
+        // Р’С‹С‡РёСЃР»РµРЅРёРµ max(x, РєРѕСЂРµРЅСЊ С‚СЂРµС‚СЊРµР№ СЃС‚РµРїРµРЅРё(x+z), cos(xz)) РІСЂСѓС‡РЅСѓСЋ
         double cube_root = cbrt(x + z);
         double cos_val = cos(x * z);
 
@@ -46,7 +46,7 @@ double Razv(double x, double z, int& n)
     return r;
 }
 
-// 2-й способ 
+// 2-Р№ СЃРїРѕСЃРѕР± 
 double Razm(double x, double z, int& n)
 {
     if (z < 0 && x < 0) {
@@ -61,4 +61,5 @@ double Razm(double x, double z, int& n)
         n = 3;
         return x + z;
     }
+
 }
